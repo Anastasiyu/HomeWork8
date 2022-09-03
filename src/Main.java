@@ -17,4 +17,8 @@ public class Main {
             System.out.println(year + " - не високосный год");
         }
     }
+
+    public static void task2() {
+
+    }
 }
