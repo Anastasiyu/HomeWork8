@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task3();
     }
 
     public static void task1() {
@@ -42,5 +42,29 @@ public class Main {
             int clientDeviceYear = LocalDate.now().getYear();
             desiredLink(clientOS, clientDeviceYear);
         }
+    public static int distans(){
+        return 56;
+    }
+    public static void task3() {
+
+
+        int deliveryDistance = distans();
+        int deliveriDays = 1;
+        if (deliveryDistance > 20) {
+            deliveriDays++;
+        }
+        if (deliveryDistance > 60) {
+            deliveriDays++;
+        }
+        {
+            System.out.print("Потребуеться дней: ");
+            sumDeliveriDay (deliveriDays);
+        }
 
     }
+
+
+    public static void sumDeliveriDay(int deliveriDays) {
+        System.out.println(deliveriDays);
+    }
+}
