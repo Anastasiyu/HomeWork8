@@ -1,17 +1,15 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        task3();
+        task1();
     }
 
     public static void task1() {
         leapYear(2021);
     }
-
-    public static void leapYear(int year) {
+    public static void leapYear (int year) {
 
         if (year / 4 == 0 && year / 100 != 0 || year / 400 == 0) {
             System.out.println(year + " - високосный год");
@@ -21,50 +19,6 @@ public class Main {
     }
 
     public static void task2() {
-        int clientOS = 0;
-        int clientDeviceYear = LocalDate.now().getYear();
-        desiredLink(clientOS, clientDeviceYear);
-    }
 
-    public static void desiredLink(int clientOS, int clientDeviceYear) {
-
-        if (clientOS == 0) {
-
-            if (clientDeviceYear < 2015) {
-
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-        } else {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-        }
-    }
-
-    public static void task3() {
-
-
-            int deliveryDistance = 95;
-            int deliveriDays = 1;
-            if (deliveryDistance > 20) {
-                deliveriDays++;
-            }
-            if (deliveryDistance > 60) {
-                deliveriDays++;
-            }
-            {
-                System.out.print("Потребуеться дней: ");
-                distance (deliveriDays);
-            }
-
-        }
-
-
-    public static void distance(int deliveriDays) {
-        System.out.println(deliveriDays);
     }
 }
